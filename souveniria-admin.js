@@ -1,6 +1,6 @@
   // ── NAV ──
-  const PAGES = ['dashboard','profile','orders','products','customer-service','vouchers','blogs','banners','settings'];
-  const NM = { dashboard:['n-dashboard','sn-dashboard'], profile:['n-profile','sn-profile'], orders:['n-orders','sn-orders'], products:['n-products'], 'customer-service':['n-customer-service'], vouchers:['n-vouchers'], blogs:['n-blogs'], banners:['n-banners'], settings:['sn-settings'] };
+  const PAGES = ['dashboard','profile','orders','products','customer-service','vouchers','blogs','banners','settings','about','advocacy','store-locator','faq','terms','privacy','shipping','refund'];
+  const NM = { dashboard:['n-dashboard','sn-dashboard'], profile:['n-profile','sn-profile'], orders:['n-orders','sn-orders'], products:['n-products'], 'customer-service':['n-customer-service'], vouchers:['n-vouchers'], blogs:['n-blogs'], banners:['n-banners'], settings:['sn-settings'], about:[], advocacy:[], 'store-locator':[], faq:[], terms:[], privacy:[], shipping:[], refund:[] };
 
   function go(name) {
     PAGES.forEach(p => { const el=document.getElementById('p-'+p); if(el) el.classList.remove('active'); });
@@ -729,3 +729,12 @@
     renderBanners();
     renderProdList();
   });
+
+  // ── FAQ ACCORDION ──
+  function toggleFaq(btn) {
+    var answer = btn.nextElementSibling;
+    var icon = btn.querySelector('.faq-icon');
+    var isOpen = answer.classList.contains('open');
+    answer.classList.toggle('open', !isOpen);
+    if (icon) icon.innerHTML = isOpen ? '&#8744;' : '&#8743;';
+  }

@@ -228,37 +228,38 @@
       <div class="footer-col">
         <h4>About Souveniria</h4>
         <ul>
-          <li><a>About Us</a></li><li><a>Advocacy</a></li>
-          <li><a>Blogs</a></li><li><a>Store Locator</a></li><li><a>Contact Us</a></li>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Customer Service</h4>
         <ul>
-          <li><a>Frequently Asked Questions</a></li><li><a>Terms of Service</a></li>
-          <li><a>Privacy Policy</a></li><li><a>Shipping Policy</a></li><li><a>Refund Policy</a></li>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
         </ul>
       </div>
       <div class="footer-col footer-newsletter" style="text-align:center;">
         <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
-        <p>Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
         <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
           <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
-          <!-- Send icon (exact from customer) -->
-          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         </div>
         <div style="display:flex;justify-content:center;gap:14px;">
-          <!-- Facebook (exact from customer) -->
           <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-          <!-- YouTube (exact from customer) -->
           <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
-          <!-- Instagram (exact from customer) -->
           <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
         </div>
       </div>
     </div>
     <div class="footer-bottom-bar">
-      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a href="#">Privacy Statement</a> &middot; <a href="#">Terms &amp; Policy</a></div>
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
     </div>
   </footer>
 </div>
@@ -319,11 +320,42 @@
   <footer>
     <div class="footer-mountain"></div>
     <div class="footer-inner">
-      <div class="footer-col"><h4>About Souveniria</h4><ul><li><a>About Us</a></li><li><a>Advocacy</a></li><li><a>Blogs</a></li><li><a>Store Locator</a></li><li><a>Contact Us</a></li></ul></div>
-      <div class="footer-col"><h4>Customer Service</h4><ul><li><a>Frequently Asked Questions</a></li><li><a>Terms of Service</a></li><li><a>Privacy Policy</a></li><li><a>Shipping Policy</a></li><li><a>Refund Policy</a></li></ul></div>
-      <div class="footer-col footer-newsletter" style="text-align:center;"><h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4><p>Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p><div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;"><input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;"><svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></div><div style="display:flex;justify-content:center;gap:14px;"><a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a></div></div>
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
     </div>
-    <div class="footer-bottom-bar"><div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a href="#">Privacy Statement</a> &middot; <a href="#">Terms &amp; Policy</a></div></div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
   </footer>
 </div>
 
@@ -470,22 +502,42 @@
   <footer>
     <div class="footer-mountain"></div>
     <div class="footer-inner">
-      <div class="footer-col"><h4>About Souveniria</h4><ul><li><a>About Us</a></li><li><a>Advocacy</a></li><li><a>Blogs</a></li><li><a>Store Locator</a></li><li><a>Contact Us</a></li></ul></div>
-      <div class="footer-col"><h4>Customer Service</h4><ul><li><a>Frequently Asked Questions</a></li><li><a>Terms of Service</a></li><li><a>Privacy Policy</a></li><li><a>Shipping Policy</a></li><li><a>Refund Policy</a></li></ul></div>
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
       <div class="footer-col footer-newsletter" style="text-align:center;">
         <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
-        <p>Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
         <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
-          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you!','&#9829;');this.value='';}">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         </div>
         <div style="display:flex;justify-content:center;gap:14px;">
-          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
         </div>
       </div>
     </div>
-    <div class="footer-bottom-bar"><div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a href="#">Privacy Statement</a> &middot; <a href="#">Terms &amp; Policy</a></div></div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
   </footer>
 </div>
 
@@ -502,7 +554,46 @@
       </div>
       <div class="card" style="padding:0;"><div style="overflow-x:auto;"><table class="cl"><thead><tr><th>Product</th><th>Category</th><th>Price</th><th>Stock</th><th>Status</th><th style="text-align:center;">Actions</th></tr></thead><tbody id="prod-list-body"></tbody></table></div><div class="pg-wrap" id="prod-list-pages"></div></div>
     </div>
-    <footer><div class="footer-mountain"></div><div class="footer-inner"><div class="footer-col"><h4>About Souveniria</h4><ul><li><a>About Us</a></li><li><a>Advocacy</a></li><li><a>Blogs</a></li><li><a>Store Locator</a></li><li><a>Contact Us</a></li></ul></div><div class="footer-col"><h4>Customer Service</h4><ul><li><a>FAQ</a></li><li><a>Terms of Service</a></li><li><a>Privacy Policy</a></li></ul></div><div class="footer-col footer-newsletter" style="text-align:center;"><h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4><p>Your feedback helps us improve.</p></div></div><div class="footer-bottom-bar"><div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story</div></div></footer>
+    <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
   </div>
   <div id="prod-view-new" style="display:none;">
     <div class="page-strip"><div class="page-strip-inner"><div><h1>New Product</h1><p>Add a new item to the catalog</p></div></div></div>
@@ -536,7 +627,46 @@
         </div>
       </div>
     </div>
-    <footer><div class="footer-mountain"></div><div class="footer-inner"><div class="footer-col"><h4>About Souveniria</h4><ul><li><a>About Us</a></li><li><a>Advocacy</a></li><li><a>Blogs</a></li></ul></div><div class="footer-col"><h4>Customer Service</h4><ul><li><a>FAQ</a></li><li><a>Terms of Service</a></li><li><a>Privacy Policy</a></li></ul></div><div class="footer-col footer-newsletter" style="text-align:center;"><h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4><p>Your feedback helps us improve.</p></div></div><div class="footer-bottom-bar"><div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story</div></div></footer>
+    <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
   </div>
   <div id="prod-view-detail" style="display:none;">
     <div class="page-strip"><div class="page-strip-inner"><div><h1>Product Detail</h1><p>Viewing product information</p></div></div></div>
@@ -552,7 +682,46 @@
         </div>
       </div>
     </div>
-    <footer><div class="footer-mountain"></div><div class="footer-inner"><div class="footer-col"><h4>About Souveniria</h4><ul><li><a>About Us</a></li><li><a>Advocacy</a></li><li><a>Blogs</a></li></ul></div><div class="footer-col"><h4>Customer Service</h4><ul><li><a>FAQ</a></li><li><a>Terms of Service</a></li><li><a>Privacy Policy</a></li></ul></div><div class="footer-col footer-newsletter" style="text-align:center;"><h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4><p>Your feedback helps us improve.</p></div></div><div class="footer-bottom-bar"><div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story</div></div></footer>
+    <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
   </div>
   <div id="prod-view-edit" style="display:none;">
     <div class="page-strip"><div class="page-strip-inner"><div><h1>Edit Product</h1><p>Modify product details</p></div></div></div>
@@ -573,7 +742,46 @@
         </div>
       </div>
     </div>
-    <footer><div class="footer-mountain"></div><div class="footer-inner"><div class="footer-col"><h4>About Souveniria</h4><ul><li><a>About Us</a></li><li><a>Advocacy</a></li><li><a>Blogs</a></li></ul></div><div class="footer-col"><h4>Customer Service</h4><ul><li><a>FAQ</a></li><li><a>Terms of Service</a></li><li><a>Privacy Policy</a></li></ul></div><div class="footer-col footer-newsletter" style="text-align:center;"><h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4><p>Your feedback helps us improve.</p></div></div><div class="footer-bottom-bar"><div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story</div></div></footer>
+    <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
   </div>
   <div class="modal-overlay" id="prod-modal-overlay" onclick="closeProdModal()"></div>
   <div class="site-modal" id="prod-modal-save" style="max-width:400px;"><div class="modal-body" style="padding:30px 24px;"><p style="font-family:'Courier New',monospace;font-size:14px;color:var(--text-dark);margin-bottom:24px;text-align:center;">Do you really want to Save your changes?</p><div style="display:flex;gap:12px;justify-content:center;"><button class="btn-accent" style="padding:10px 36px;" onclick="confirmProdAction('save')">Yes</button><button style="background:#c17f6b;color:white;border:none;padding:10px 36px;font-size:11px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:'Segoe UI',Arial,sans-serif;" onclick="closeProdModal()">No</button></div></div></div>
@@ -602,7 +810,46 @@
       <div class="card"><div class="card-hdr"><h3>Customer Feedback</h3></div><div id="cs-fb-list" class="card-body" style="padding:0;"></div><div class="pg-wrap" id="cs-fb-pages"></div></div>
     </div>
   </div>
-  <footer><div class="footer-mountain"></div><div class="footer-inner"><div class="footer-col"><h4>About Souveniria</h4><ul><li><a>About Us</a></li><li><a>Advocacy</a></li><li><a>Blogs</a></li><li><a>Store Locator</a></li><li><a>Contact Us</a></li></ul></div><div class="footer-col"><h4>Customer Service</h4><ul><li><a>FAQ</a></li><li><a>Terms of Service</a></li><li><a>Privacy Policy</a></li><li><a>Shipping Policy</a></li><li><a>Refund Policy</a></li></ul></div><div class="footer-col footer-newsletter" style="text-align:center;"><h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4><p>Your feedback helps us improve.</p></div></div><div class="footer-bottom-bar"><div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story</div></div></footer>
+  <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
 </div>
 
 
@@ -622,7 +869,46 @@
   <div class="site-modal" id="v-modal" style="max-width:420px;"><div class="modal-header"><h3>New Voucher 🏷️</h3><button onclick="closeVoucherModal()">&#10005;</button></div><div class="modal-body"><div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;"><div><div style="font-size:11px;font-weight:600;color:var(--text-mid);margin-bottom:5px;letter-spacing:.5px;">Voucher Name</div><input id="v-new-name" type="text" style="width:100%;border:1px solid var(--border);background:var(--white);padding:7px 10px;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;outline:none;color:var(--text-dark);"></div><div><div style="font-size:11px;font-weight:600;color:var(--text-mid);margin-bottom:5px;letter-spacing:.5px;">Category</div><select id="v-new-cat" style="width:100%;border:1px solid var(--border);background:var(--white);padding:7px 10px;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;outline:none;color:var(--text-dark);"><option>Memorabilia</option><option>Clothing</option><option>Bags</option><option>Keychains</option></select></div></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px;"><div><div style="font-size:11px;font-weight:600;color:var(--text-mid);margin-bottom:5px;letter-spacing:.5px;">Discount Percentile</div><div style="display:flex;align-items:center;border:1px solid var(--border);background:var(--white);"><input id="v-new-disc" type="number" min="1" max="100" style="flex:1;border:none;background:transparent;padding:7px 10px;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;outline:none;color:var(--text-dark);"><span style="padding:0 10px;color:var(--text-light);font-size:12px;">%</span></div></div><div><div style="font-size:11px;font-weight:600;color:var(--text-mid);margin-bottom:5px;letter-spacing:.5px;">Requirement</div><select id="v-new-req" style="width:100%;border:1px solid var(--border);background:var(--white);padding:7px 10px;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;outline:none;color:var(--text-dark);"><option>Shipping Voucher</option><option>Minimum Purchase</option><option>No Requirement</option></select></div></div><div style="display:flex;gap:10px;justify-content:flex-end;"><button class="btn-outline" onclick="closeVoucherModal()">Cancel</button><button class="btn-accent" onclick="addVoucher()">Add</button></div></div></div>
   <div class="modal-overlay" id="v-del-overlay" onclick="closeDelModal()"></div>
   <div class="site-modal" id="v-del-modal" style="max-width:420px;"><div class="modal-body" style="padding:30px 24px;"><p style="font-family:'Courier New',monospace;font-size:14px;color:var(--text-dark);margin-bottom:24px;text-align:center;">Do you really want to Remove this voucher?</p><div style="display:flex;gap:12px;justify-content:center;"><button class="btn-accent" style="padding:10px 36px;" onclick="confirmDelVoucher()">Yes</button><button style="background:#c17f6b;color:white;border:none;padding:10px 36px;font-size:11px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:'Segoe UI',Arial,sans-serif;" onclick="closeDelModal()">No</button></div></div></div>
-  <footer><div class="footer-mountain"></div><div class="footer-inner"><div class="footer-col"><h4>About Souveniria</h4><ul><li><a>About Us</a></li><li><a>Advocacy</a></li><li><a>Blogs</a></li><li><a>Store Locator</a></li><li><a>Contact Us</a></li></ul></div><div class="footer-col"><h4>Customer Service</h4><ul><li><a>FAQ</a></li><li><a>Terms of Service</a></li><li><a>Privacy Policy</a></li><li><a>Shipping Policy</a></li><li><a>Refund Policy</a></li></ul></div><div class="footer-col footer-newsletter" style="text-align:center;"><h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4><p>Your feedback helps us improve.</p></div></div><div class="footer-bottom-bar"><div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story</div></div></footer>
+  <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
 </div>
 
 
@@ -638,7 +924,46 @@
   </div>
   <div class="modal-overlay" id="b-modal-overlay" onclick="closeBlogModal()"></div>
   <div class="site-modal" id="b-modal" style="max-width:500px;"><div class="modal-header"><h3>New Blog Post</h3><button onclick="closeBlogModal()">&#10005;</button></div><div class="modal-body"><div style="margin-bottom:12px;"><div style="font-size:11px;font-weight:600;color:var(--text-mid);margin-bottom:5px;letter-spacing:.5px;">Title</div><input id="b-new-title" type="text" placeholder="Enter blog title..." style="width:100%;border:1px solid var(--border);background:var(--white);padding:8px 10px;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;outline:none;color:var(--text-dark);"></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;"><div><div style="font-size:11px;font-weight:600;color:var(--text-mid);margin-bottom:5px;letter-spacing:.5px;">Category</div><select id="b-new-cat" style="width:100%;border:1px solid var(--border);background:var(--white);padding:8px 10px;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;outline:none;color:var(--text-dark);"><option>Advocacy</option><option>Culture</option><option>Travel</option><option>Products</option><option>Events</option></select></div><div><div style="font-size:11px;font-weight:600;color:var(--text-mid);margin-bottom:5px;letter-spacing:.5px;">Status</div><select id="b-new-status" style="width:100%;border:1px solid var(--border);background:var(--white);padding:8px 10px;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;outline:none;color:var(--text-dark);"><option>Draft</option><option>Published</option></select></div></div><div style="margin-bottom:20px;"><div style="font-size:11px;font-weight:600;color:var(--text-mid);margin-bottom:5px;letter-spacing:.5px;">Content Preview</div><textarea id="b-new-content" rows="4" placeholder="Write a short preview or excerpt..." style="width:100%;border:1px solid var(--border);background:var(--white);padding:8px 10px;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;outline:none;color:var(--text-dark);resize:vertical;"></textarea></div><div style="display:flex;gap:10px;justify-content:flex-end;"><button class="btn-outline" onclick="closeBlogModal()">Cancel</button><button class="btn-primary" onclick="addBlog()">Save Post</button></div></div></div>
-  <footer><div class="footer-mountain"></div><div class="footer-inner"><div class="footer-col"><h4>About Souveniria</h4><ul><li><a>About Us</a></li><li><a>Advocacy</a></li><li><a>Blogs</a></li><li><a>Store Locator</a></li><li><a>Contact Us</a></li></ul></div><div class="footer-col"><h4>Customer Service</h4><ul><li><a>FAQ</a></li><li><a>Terms of Service</a></li><li><a>Privacy Policy</a></li></ul></div><div class="footer-col footer-newsletter" style="text-align:center;"><h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4><p>Your feedback helps us improve.</p></div></div><div class="footer-bottom-bar"><div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story</div></div></footer>
+  <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
 </div>
 
 
@@ -648,7 +973,46 @@
   <div class="page-inner"><div id="banner-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-bottom:20px;"></div></div>
   <div class="modal-overlay" id="ban-modal-overlay" onclick="closeBannerModal()"></div>
   <div class="site-modal" id="ban-modal" style="max-width:460px;"><div class="modal-header"><h3>New Banner</h3><button onclick="closeBannerModal()">&#10005;</button></div><div class="modal-body"><div style="margin-bottom:12px;"><div style="font-size:11px;font-weight:600;color:var(--text-mid);margin-bottom:5px;letter-spacing:.5px;">Banner Title</div><input id="ban-title" type="text" placeholder="e.g. Summer Sale 2026" style="width:100%;border:1px solid var(--border);background:var(--white);padding:8px 10px;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;outline:none;color:var(--text-dark);"></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;"><div><div style="font-size:11px;font-weight:600;color:var(--text-mid);margin-bottom:5px;letter-spacing:.5px;">Placement</div><select id="ban-placement" style="width:100%;border:1px solid var(--border);background:var(--white);padding:8px 10px;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;outline:none;color:var(--text-dark);"><option>Homepage Hero</option><option>Top Bar</option><option>Category Page</option><option>Checkout</option></select></div><div><div style="font-size:11px;font-weight:600;color:var(--text-mid);margin-bottom:5px;letter-spacing:.5px;">Status</div><select id="ban-status" style="width:100%;border:1px solid var(--border);background:var(--white);padding:8px 10px;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;outline:none;color:var(--text-dark);"><option>Active</option><option>Inactive</option><option>Scheduled</option></select></div></div><div style="margin-bottom:12px;"><div style="font-size:11px;font-weight:600;color:var(--text-mid);margin-bottom:5px;letter-spacing:.5px;">Caption / Tagline</div><input id="ban-caption" type="text" placeholder="Banner subtitle or call-to-action text..." style="width:100%;border:1px solid var(--border);background:var(--white);padding:8px 10px;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;outline:none;color:var(--text-dark);"></div><div style="margin-bottom:20px;"><div style="font-size:11px;font-weight:600;color:var(--text-mid);margin-bottom:5px;letter-spacing:.5px;">Image URL (optional)</div><input id="ban-img" type="text" placeholder="https://..." style="width:100%;border:1px solid var(--border);background:var(--white);padding:8px 10px;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;outline:none;color:var(--text-dark);"></div><div style="display:flex;gap:10px;justify-content:flex-end;"><button class="btn-outline" onclick="closeBannerModal()">Cancel</button><button class="btn-primary" onclick="addBanner()">Save Banner</button></div></div></div>
-  <footer><div class="footer-mountain"></div><div class="footer-inner"><div class="footer-col"><h4>About Souveniria</h4><ul><li><a>About Us</a></li><li><a>Advocacy</a></li><li><a>Blogs</a></li><li><a>Store Locator</a></li><li><a>Contact Us</a></li></ul></div><div class="footer-col"><h4>Customer Service</h4><ul><li><a>FAQ</a></li><li><a>Terms of Service</a></li><li><a>Privacy Policy</a></li></ul></div><div class="footer-col footer-newsletter" style="text-align:center;"><h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4><p>Your feedback helps us improve.</p></div></div><div class="footer-bottom-bar"><div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story</div></div></footer>
+  <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
 </div>
 
 
@@ -807,9 +1171,575 @@
     </div>
 
   </div>
-  <footer><div class="footer-mountain"></div><div class="footer-inner"><div class="footer-col"><h4>About Souveniria</h4><ul><li><a>About Us</a></li><li><a>Advocacy</a></li><li><a>Blogs</a></li><li><a>Store Locator</a></li><li><a>Contact Us</a></li></ul></div><div class="footer-col"><h4>Customer Service</h4><ul><li><a>FAQ</a></li><li><a>Terms of Service</a></li><li><a>Privacy Policy</a></li><li><a>Shipping Policy</a></li><li><a>Refund Policy</a></li></ul></div><div class="footer-col footer-newsletter" style="text-align:center;"><h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4><p>Your feedback helps us improve.</p></div></div><div class="footer-bottom-bar"><div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story</div></div></footer>
+  <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
 </div>
 
+
+
+
+<!-- ══════════════ ABOUT US ══════════════ -->
+<div class="page" id="p-about">
+  <div class="page-strip"><div class="page-strip-inner" style="text-align:center;"><h1>About Us</h1><p>The story behind Souveniria and the people who make it possible</p></div></div>
+  <div class="page-inner">
+    <div style="width:100%;height:240px;background:var(--card-bg);margin-bottom:32px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border:1px solid var(--border);">
+      <div style="text-align:center;z-index:1;"><div style="font-family:'Georgia','Times New Roman',serif;font-style:italic;font-size:30px;color:var(--dark-olive);margin-bottom:8px;">Souveniria</div><div style="font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--olive);">Bicol &middot; Philippines</div></div>
+      <div style="position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 20px,rgba(139,125,78,.05) 20px,rgba(139,125,78,.05) 40px);"></div>
+    </div>
+    <div style="max-width:740px;margin:0 auto 32px;font-size:13px;color:var(--text-mid);line-height:1.95;">
+      <p style="margin-bottom:14px;">Founded with a vision rooted in local beginnings and deeply authentic support, Souveniria grew from a simple online showroom into a trusted local store through community-backed inspiration. We built a brand that deeply connects Bicolano craftsmanship with early buyers who valued direct handmade value rooted in the rich tradition and family love.</p>
+      <p style="margin-bottom:14px;">Souveniria stands as a home for local souvenirs where each product originates from community-based makers who apply artisanal skills, expert knowledge, and hours of processes to create items connected to culture, function, and place &mdash; allowing the store to serve as a cultural space where craftsmanship, identity, and livelihood connect through meaningful and sustainable business practices.</p>
+      <p style="margin-bottom:14px;">Local suppliers advance their businesses through supported production schedules. Souveniria includes service, simple delivery, and convenient transaction documents &mdash; helping artisans transform their locally produced pieces into local goods, and bring them closer to those who cherish respectful and transparent partnerships.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;margin-bottom:32px;border:1px solid var(--border);">
+      <div style="background:var(--card-bg);min-height:220px;display:flex;align-items:center;justify-content:center;"><div style="width:75%;height:75%;background:var(--sand);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--text-light);">Store Photo</div></div>
+      <div style="padding:32px;background:var(--warm);display:flex;flex-direction:column;justify-content:center;"><div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--olive);margin-bottom:8px;">Our Vision</div><h3 style="font-family:'Georgia','Times New Roman',serif;font-size:17px;color:var(--dark-olive);margin-bottom:12px;">OUR VISION</h3><p style="font-size:12.5px;color:var(--text-mid);line-height:1.8;">A resilient micro story — Souveniria operates with digital creativity and a dedicated platform store, showing regional pride and artisan craftsmanship &mdash; breaking boundaries while protecting local identity and economic participation.</p></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;margin-bottom:32px;border:1px solid var(--border);">
+      <div style="padding:32px;background:var(--warm);display:flex;flex-direction:column;justify-content:center;"><div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--olive);margin-bottom:8px;">Our Mission</div><h3 style="font-family:'Georgia','Times New Roman',serif;font-size:17px;color:var(--dark-olive);margin-bottom:12px;">OUR MISSION</h3><p style="font-size:12.5px;color:var(--text-mid);line-height:1.8;">To operate a sustainable digital platform connecting local businesses through product access, listing, specialized services, and meaningful online reach &mdash; extending market reach and supporting sustainable business growth across the region.</p></div>
+      <div style="background:var(--card-bg);min-height:220px;display:flex;align-items:center;justify-content:center;"><div style="width:75%;height:75%;background:var(--sand);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--text-light);">Artisan Photo</div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:32px;">
+      <div style="background:var(--white);border:1px solid var(--border);padding:24px;text-align:center;"><div style="font-size:28px;margin-bottom:10px;">&#127981;</div><h4 style="font-family:'Georgia','Times New Roman',serif;font-size:14px;color:var(--dark-olive);margin-bottom:8px;">Local Roots</h4><p style="font-size:12px;color:var(--text-mid);line-height:1.7;">Every product traces back to a Bicolano artisan, community, or craft tradition rooted in Albay and the wider Bicol region.</p></div>
+      <div style="background:var(--white);border:1px solid var(--border);padding:24px;text-align:center;"><div style="font-size:28px;margin-bottom:10px;">&#127807;</div><h4 style="font-family:'Georgia','Times New Roman',serif;font-size:14px;color:var(--dark-olive);margin-bottom:8px;">Sustainable Craft</h4><p style="font-size:12px;color:var(--text-mid);line-height:1.7;">We use abaca, bamboo, pili shells, and natural dyes &mdash; materials kind to the earth and true to Bicol&rsquo;s heritage.</p></div>
+      <div style="background:var(--white);border:1px solid var(--border);padding:24px;text-align:center;"><div style="font-size:28px;margin-bottom:10px;">&#129309;</div><h4 style="font-family:'Georgia','Times New Roman',serif;font-size:14px;color:var(--dark-olive);margin-bottom:8px;">Fair Trade</h4><p style="font-size:12px;color:var(--text-mid);line-height:1.7;">We ensure every artisan partner receives fair compensation, with a portion of each sale supporting local livelihood programs.</p></div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
+</div>
+
+
+<!-- ══════════════ ADVOCACY ══════════════ -->
+<div class="page" id="p-advocacy">
+  <div class="page-strip"><div class="page-strip-inner" style="text-align:center;"><h1>Our Advocacy</h1><p>Preserving Bicol&rsquo;s heritage through every product we sell</p></div></div>
+  <div class="page-inner">
+    <div style="max-width:720px;margin:0 auto;">
+      <div style="background:var(--warm);border:1px solid var(--border);padding:28px 32px;margin-bottom:28px;text-align:center;"><div style="font-family:'Georgia','Times New Roman',serif;font-style:italic;font-size:22px;color:var(--dark-olive);margin-bottom:10px;">&ldquo;Every Souvenir Carries a Story&rdquo;</div><p style="font-size:12.5px;color:var(--text-mid);">Supporting the artisans and weavers of Bicol, one souvenir at a time.</p></div>
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:16px;color:var(--dark-olive);margin-bottom:12px;">Supporting Local Artisans</h3>
+      <p style="font-size:13px;color:var(--text-mid);line-height:1.9;margin-bottom:16px;">Souveniria was founded with a deep commitment to preserving Bicol&rsquo;s rich cultural heritage. We work directly with local artisans, weavers, potters, and craftspeople across Albay, Camarines Sur, Sorsogon, and the wider Bicol region to bring their handcrafted creations to a national audience.</p>
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:16px;color:var(--dark-olive);margin:24px 0 12px;">Sustainable &amp; Ethical Sourcing</h3>
+      <p style="font-size:13px;color:var(--text-mid);line-height:1.9;margin-bottom:16px;">All our products are made using traditional, sustainable materials &mdash; abaca (laga), bamboo, pili shells, and natural dyes. We ensure fair trade pricing for every artisan partner, and a portion of every sale goes directly back to community livelihood programs in Legazpi, Daraga, and Tabaco.</p>
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:16px;color:var(--dark-olive);margin:24px 0 12px;">Promoting Bicol Culture</h3>
+      <p style="font-size:13px;color:var(--text-mid);line-height:1.9;margin-bottom:16px;">From Mayon Volcano-inspired designs to Ibalong festival motifs, every Souveniria product is a wearable, giftable piece of Bicol&rsquo;s story. We believe that souvenirs are more than mementos &mdash; they are ambassadors of culture, identity, and pride.</p>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
+</div>
+
+
+<!-- ══════════════ STORE LOCATOR ══════════════ -->
+<div class="page" id="p-store-locator">
+  <div class="page-strip"><div class="page-strip-inner" style="text-align:center;"><h1>Store Locator</h1><p>Find Souveniria products near you</p></div></div>
+  <div class="page-inner">
+    <div style="max-width:800px;margin:0 auto;">
+      <div style="background:rgba(139,125,78,.1);border:1px solid rgba(139,125,78,.3);padding:16px 20px;margin-bottom:28px;text-align:center;"><h3 style="font-family:'Georgia','Times New Roman',serif;font-size:15px;color:var(--dark-olive);margin-bottom:6px;">PERSONAL SHOPPING SERVICES</h3><p style="font-size:12px;color:var(--text-mid);">Get your orders delivered through our personal shoppers!</p><p style="font-size:11px;color:var(--text-light);margin-top:4px;">Tuesday&ndash;Sunday: 10:00 AM to 4:00 PM (PST)</p></div>
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:13px;color:var(--dark-olive);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Mall Stores</h3>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;">
+        <div style="background:var(--white);border:1px solid var(--border);padding:14px 18px;"><div style="font-size:13px;font-weight:600;color:var(--dark-olive);margin-bottom:4px;">INITIAL ARTE &ndash; SM RIVERA</div><div style="font-size:12px;color:var(--text-mid);margin-bottom:3px;">3/F Level, 1/F Annex Bldg. SM Rivera Legazpi, Legazpi City, Albay 4500</div><div style="font-size:12px;color:var(--text-light);">&#128222; 09179023143</div></div>
+        <div style="background:var(--white);border:1px solid var(--border);padding:14px 18px;"><div style="font-size:13px;font-weight:600;color:var(--dark-olive);margin-bottom:4px;">GABANO BAYAN &ndash; SM BRUTAS</div><div style="font-size:12px;color:var(--text-mid);margin-bottom:3px;">2nd Floor, Unit Bayan M7, SM Brutas Legazpi, Legazpi City, Albay 4500</div><div style="font-size:12px;color:var(--text-light);">&#128222; 09179023143</div></div>
+        <div style="background:var(--white);border:1px solid var(--border);padding:14px 18px;"><div style="font-size:13px;font-weight:600;color:var(--dark-olive);margin-bottom:4px;">PAMANA MARKET &ndash; SM PE&Ntilde;AFIEL</div><div style="font-size:12px;color:var(--text-mid);margin-bottom:3px;">Door 1, Bldg. 1B, Ground Floor, Cubao, Quezon City 1100</div><div style="font-size:12px;color:var(--text-light);">&#128222; 09179023143</div></div>
+        <div style="background:var(--white);border:1px solid var(--border);padding:14px 18px;"><div style="font-size:13px;font-weight:600;color:var(--dark-olive);margin-bottom:4px;">LIKHANG BIKOL &ndash; SM BEJER</div><div style="font-size:12px;color:var(--text-mid);margin-bottom:3px;">Ground Floor (Lobby), Plaza Bikol Buenas, Door 8, Legazpi City 4500</div><div style="font-size:12px;color:var(--text-light);">&#128222; 09176026796</div></div>
+      </div>
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:13px;color:var(--dark-olive);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Boutique Stores</h3>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;">
+        <div style="background:var(--white);border:1px solid var(--border);padding:14px 18px;"><div style="font-size:13px;font-weight:600;color:var(--dark-olive);margin-bottom:4px;">GABANO BAYAN</div><div style="font-size:12px;color:var(--text-light);">&#128222; 09175091396</div></div>
+        <div style="background:var(--white);border:1px solid var(--border);padding:14px 18px;"><div style="font-size:13px;font-weight:600;color:var(--dark-olive);margin-bottom:4px;">ANEMO CRAFTS</div><div style="font-size:12px;color:var(--text-mid);margin-bottom:3px;">Isabela 9, SB 40-44 #114, Cubao, Quezon City</div><div style="font-size:12px;color:var(--text-light);">&#128222; Unavailable</div></div>
+        <div style="background:var(--white);border:1px solid var(--border);padding:14px 18px;"><div style="font-size:13px;font-weight:600;color:var(--dark-olive);margin-bottom:4px;">LAMBAY ARTE</div><div style="font-size:12px;color:var(--text-mid);margin-bottom:3px;">Door 3 Soriano St., Quezon City</div><div style="font-size:12px;color:var(--text-light);">&#128222; Unavailable</div></div>
+      </div>
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:13px;color:var(--dark-olive);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Department Stores</h3>
+      <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:24px;">
+        <div style="background:var(--white);border:1px solid var(--border);padding:14px 18px;"><div style="font-size:13px;font-weight:600;color:var(--dark-olive);margin-bottom:4px;">GANYAN BAYAN</div><div style="font-size:12px;color:var(--text-mid);margin-bottom:3px;">Ground Floor, The SM Store, Annex Legazpi City, Albay 4500</div></div>
+        <div style="background:var(--white);border:1px solid var(--border);padding:14px 18px;"><div style="font-size:13px;font-weight:600;color:var(--dark-olive);margin-bottom:4px;">PAMANA MARKET</div><div style="font-size:12px;color:var(--text-mid);margin-bottom:3px;">2/F Store Area, Quezon City, Albay 4500</div><div style="font-size:12px;color:var(--text-light);">&#128222; 09174940045</div></div>
+        <div style="background:var(--white);border:1px solid var(--border);padding:14px 18px;"><div style="font-size:13px;font-weight:600;color:var(--dark-olive);margin-bottom:4px;">LIKHANG BIKOL</div><div style="font-size:12px;color:var(--text-mid);margin-bottom:3px;">Annex Square, Legazpi City 4500</div><div style="font-size:12px;color:var(--text-light);">&#128222; 09179902100</div></div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
+</div>
+
+
+
+
+<!-- ══════════════ FAQ ══════════════ -->
+<div class="page" id="p-faq">
+  <div style="max-width:760px;margin:0 auto;padding:32px 24px 0;text-align:center;"><h1 style="font-family:'Georgia','Times New Roman',serif;font-size:28px;color:var(--dark-olive);margin-bottom:12px;">Frequently Asked Questions</h1><p style="font-size:13px;color:var(--text-mid);max-width:580px;margin:0 auto 20px;line-height:1.7;">Welcome to our FAQ (Frequently Asked Questions) Page. If you have concerns that are not addressed here, please do get in touch with us via the Contact Us page. Thank you!</p><hr style="border:none;border-top:1px solid var(--border);margin-bottom:0;"></div>
+  <div class="page-inner">
+    <div style="max-width:700px;margin:0 auto;">
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:16px;color:var(--dark-olive);margin:0 0 12px;border-bottom:1px solid var(--border);padding-bottom:8px;">Order &amp; Shipping</h3>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How do I place an order? <span class="faq-icon">&#8743;</span></button><div class="faq-a open"><p>You can browse our collections in the navigation bar. Once you find an item, click on it to go to the product page. Click &ldquo;Add to Cart&rdquo; or &ldquo;Buy Now&rdquo; to proceed to checkout where you can complete your order by entering your shipping details and choosing a payment method.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">When do I receive my order? <span class="faq-icon">&#8744;</span></button><div class="faq-a"><p>Delivery times depend on your location. Within Legazpi City, orders typically arrive within 1&ndash;2 business days. For other areas in Bicol, allow 2&ndash;5 business days. For NCR and other regions, please allow 5&ndash;10 business days. A tracking number will be sent once your order is dispatched.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Can I make changes to my order? <span class="faq-icon">&#8744;</span></button><div class="faq-a"><p>Order changes can be made within 24 hours of placing your order. Once dispatched, changes are no longer possible. Please contact us immediately via the Contact Us page if you need to modify your order.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What shipping options are available? <span class="faq-icon">&#8744;</span></button><div class="faq-a"><p>We offer shipping via JRS Express and Grab for local deliveries. For pickup, you may visit any of our partner stores. Metro Manila deliveries are also available. Shipping fees are calculated at checkout based on your delivery address and item size/weight.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How much is shipping? Is it included in the listing price? <span class="faq-icon">&#8744;</span></button><div class="faq-a"><p>Shipping is NOT included in the listing price. The fee will be calculated and displayed at checkout. You can also use free shipping vouchers if applicable.</p></div></div>
+
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:16px;color:var(--dark-olive);margin:28px 0 12px;border-bottom:1px solid var(--border);padding-bottom:8px;">Payments, Returns, &amp; Exchanges</h3>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you accept Cash on Delivery (COD)? <span class="faq-icon">&#8743;</span></button><div class="faq-a open"><p>We accept Cash on Delivery (COD) within our service area. Additional fees may vary based on your delivery address and order value. COD appears as a payment option at checkout.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">What payment methods do you accept? <span class="faq-icon">&#8744;</span></button><div class="faq-a"><p>We accept GCash, online banking transfers, and Cash on Delivery (COD) for applicable areas. All payments are processed securely. For GCash, send to our official account and include your order reference number.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do you accept returns or refunds? <span class="faq-icon">&#8744;</span></button><div class="faq-a"><p>Yes, we accept returns and refunds under specific conditions. Items must be returned within 7 days from date of purchase. Please refer to our <a onclick="go('refund')" style="color:var(--olive);cursor:pointer;">Refund Policy</a> for full details.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How long does a refund take to process? <span class="faq-icon">&#8744;</span></button><div class="faq-a"><p>Refunds are typically processed within 5&ndash;10 business days from the date we receive and inspect the returned item. Refunds will be issued in the original form of payment and will not include any shipping charges.</p></div></div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
+</div>
+
+
+<!-- ══════════════ TERMS OF SERVICE ══════════════ -->
+<div class="page" id="p-terms">
+  <div style="max-width:760px;margin:0 auto;padding:32px 24px 0;text-align:center;"><h1 style="font-family:'Georgia','Times New Roman',serif;font-size:28px;color:var(--dark-olive);margin-bottom:20px;">Terms of Service</h1><hr style="border:none;border-top:1px solid var(--border);margin-bottom:0;"></div>
+  <div class="page-inner">
+    <div style="max-width:760px;margin:0 auto;font-size:13px;color:var(--text-mid);line-height:1.9;">
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:15px;color:var(--dark-olive);margin:0 0 8px;">OVERVIEW</h3>
+      <p style="margin-bottom:12px;">This website is operated by Souveniria in the Bicol Region. Throughout the site, the terms &ldquo;we&rdquo;, &ldquo;us&rdquo; and &ldquo;our&rdquo; refer to Souveniria. Souveniria offers this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.</p>
+      <p style="margin-bottom:12px;">By visiting our site and/or purchasing something from us, you engage in our &ldquo;Service&rdquo; and agree to be bound by the following terms and conditions, including those additional terms and conditions and policies referenced herein. These Terms of Service apply to all users of the site, including browsers, vendors, customers, merchants, and contributors of content.</p>
+      <p style="margin-bottom:20px;">Please read these Terms of Service carefully before accessing or using our website. If you do not agree to all the terms and conditions, then you may not access the website or use any services.</p>
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:15px;color:var(--dark-olive);margin:20px 0 8px;">SECTION 1 &ndash; ONLINE STORE CONDITIONS</h3>
+      <p style="margin-bottom:20px;">By agreeing to these Terms of Service, you represent that you are at least the age of majority in your state or province of residence. You must not use our products for any illegal or unauthorized purpose nor may you violate any laws in your jurisdiction. A breach or violation of any of the Terms will result in an immediate termination of your Services.</p>
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:15px;color:var(--dark-olive);margin:20px 0 8px;">SECTION 2 &ndash; GENERAL CONDITIONS</h3>
+      <p style="margin-bottom:20px;">We reserve the right to refuse service to anyone for any reason at any time. You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service without express written permission by us.</p>
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:15px;color:var(--dark-olive);margin:20px 0 8px;">SECTION 3 &ndash; ACCURACY OF INFORMATION</h3>
+      <p style="margin-bottom:20px;">We are not responsible if information made available on this site is not accurate, complete or current. The material on this site is provided for general information only. We reserve the right to modify the contents of this site at any time.</p>
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:15px;color:var(--dark-olive);margin:20px 0 8px;">SECTION 4 &ndash; MODIFICATIONS TO THE SERVICE AND PRICES</h3>
+      <p style="margin-bottom:20px;">Prices for our products are subject to change without notice. We reserve the right at any time to modify or discontinue the Service without notice. We shall not be liable for any modification, price change, suspension or discontinuance of the Service.</p>
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:15px;color:var(--dark-olive);margin:20px 0 8px;">SECTION 5 &ndash; PRODUCTS OR SERVICES</h3>
+      <p style="margin-bottom:20px;">Certain products or services may be available exclusively online. These products or services may have limited quantities and are subject to return or exchange only according to our Refund Policy.</p>
+      <p style="margin-top:32px;font-size:12px;color:var(--text-light);">Questions about the Terms of Service? <a onclick="go('customer-service')" style="color:var(--olive);cursor:pointer;">Contact us</a></p>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
+</div>
+
+
+<!-- ══════════════ PRIVACY POLICY ══════════════ -->
+<div class="page" id="p-privacy">
+  <div style="max-width:760px;margin:0 auto;padding:32px 24px 0;text-align:center;"><h1 style="font-family:'Georgia','Times New Roman',serif;font-size:28px;color:var(--dark-olive);margin-bottom:20px;">Privacy Policy</h1><hr style="border:none;border-top:1px solid var(--border);margin-bottom:0;"></div>
+  <div class="page-inner">
+    <div style="max-width:760px;margin:0 auto;font-size:13px;color:var(--text-mid);line-height:1.9;">
+      <p style="margin-bottom:16px;">Souveniria E-Commerce complies with the standards and requirements set forth by the Data Privacy Act (DPA) of 2012, its Implementing Rules and Regulations, and other data privacy guidelines issued by the National Privacy Commission (NPC).</p>
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:15px;color:var(--dark-olive);margin:20px 0 8px;">What services are covered by this Privacy Notice?</h3>
+      <p style="margin-bottom:8px;">This Privacy Notice describes how we handle your personal information when you use this website and/or avail of our services. Among others, these Services may include:</p>
+      <ul style="margin-left:20px;margin-bottom:16px;"><li>Customer service and marketing activities;</li><li>Delivery services;</li><li>E-commerce transactions;</li><li>Loyalty/rewards services;</li><li>Order delivery services; and</li><li>Returns and Refunds.</li></ul>
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:15px;color:var(--dark-olive);margin:20px 0 8px;">What personal information do we collect?</h3>
+      <ol style="margin-left:20px;margin-bottom:16px;">
+        <li style="margin-bottom:8px;"><strong>Personal Identifiers.</strong> Full name, email address, home or delivery address.</li>
+        <li style="margin-bottom:8px;"><strong>Contact Data.</strong> Mobile number or telephone number.</li>
+        <li style="margin-bottom:8px;"><strong>Technical Data.</strong> IP address, browser type, device identifiers, and browsing behavior via cookies.</li>
+        <li style="margin-bottom:8px;"><strong>User Profile Data.</strong> Username and password (normalized/encrypted).</li>
+        <li style="margin-bottom:8px;"><strong>Payment Data.</strong> Masked card information, e-wallet account number, and transaction amounts — used only for payment verification and refund purposes.</li>
+      </ol>
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:15px;color:var(--dark-olive);margin:20px 0 8px;">How do we use your information?</h3>
+      <ul style="margin-left:20px;margin-bottom:16px;"><li>Processing your orders, payments, and completing transactions;</li><li>Contacting you regarding inquiries, requests, or complaints;</li><li>Maintaining your account on our digital platforms;</li><li>Performing data analytics for statistical and marketing purposes;</li><li>Complying with legal and regulatory requirements.</li></ul>
+      <p style="font-size:12px;color:var(--text-light);margin-top:24px;">For privacy questions, <a onclick="go('customer-service')" style="color:var(--olive);cursor:pointer;">contact us</a>.</p>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
+</div>
+
+
+<!-- ══════════════ SHIPPING POLICY ══════════════ -->
+<div class="page" id="p-shipping">
+  <div style="max-width:760px;margin:0 auto;padding:32px 24px 0;text-align:center;"><h1 style="font-family:'Georgia','Times New Roman',serif;font-size:28px;color:var(--dark-olive);margin-bottom:20px;">Shipping Policy</h1><hr style="border:none;border-top:1px solid var(--border);margin-bottom:0;"></div>
+  <div class="page-inner">
+    <div style="max-width:760px;margin:0 auto;font-size:13px;color:var(--text-mid);line-height:1.9;">
+      <p style="margin-bottom:16px;"><strong style="color:var(--dark-olive);">DISPATCH TIME.</strong> For readily-available items, they are typically dispatched within 2 business days from the date the order is confirmed and accepted. For made-to-order items, dispatch timelines depend on the information provided on the product page.</p>
+      <p style="margin-bottom:16px;"><strong style="color:var(--dark-olive);">CHANGE OF DELIVERY ADDRESS.</strong> We are only able to change the delivery address before we issue you a shipping tracking code.</p>
+      <p style="margin-bottom:16px;"><strong style="color:var(--dark-olive);">ORDER CANCELLATIONS.</strong> We are unable to accept cancellations after the order has been dispatched, except as otherwise provided under our <a onclick="go('refund')" style="color:var(--olive);cursor:pointer;">Refund Policy</a>.</p>
+      <p style="margin-bottom:8px;"><strong style="color:var(--dark-olive);">SHIPPING INSURANCE.</strong> Packages are insured for loss and damage subject to the limits and terms of the assigned courier.</p>
+      <ul style="margin-left:20px;margin-bottom:16px;">
+        <li style="margin-bottom:6px;">The calculated shipping fee will be shown at checkout and depends on the size, weight, and delivery location of your order.</li>
+        <li style="margin-bottom:6px;">Larger packages may incur additional charges. We will notify you by email if this applies. If you do not agree, the order may be cancelled prior to dispatch and refunded.</li>
+        <li style="margin-bottom:6px;"><strong>IMPORTANT:</strong> For high-value items or addresses outside the Philippines requiring relay shipping, additional charges may apply. We will inform you via email before proceeding.</li>
+        <li style="margin-bottom:6px;">Once fully paid, we will provide you with a tracking code for your assigned courier.</li>
+        <li style="margin-bottom:6px;">If delivery fails, the courier will make two (2) additional attempts. If still unsuccessful, the order will be cancelled and you will be refunded the item price only (not the shipping fee).</li>
+      </ul>
+      <p style="margin-bottom:16px;">&mdash; If the package is damaged upon receipt, please reject the parcel from the courier and contact us immediately.</p>
+      <p style="font-size:12px;color:var(--text-light);">For shipping inquiries, <a onclick="go('customer-service')" style="color:var(--olive);cursor:pointer;">contact us</a>.</p>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
+</div>
+
+
+<!-- ══════════════ REFUND POLICY ══════════════ -->
+<div class="page" id="p-refund">
+  <div style="max-width:760px;margin:0 auto;padding:32px 24px 0;text-align:center;"><h1 style="font-family:'Georgia','Times New Roman',serif;font-size:28px;color:var(--dark-olive);margin-bottom:20px;">Refund Policy</h1><hr style="border:none;border-top:1px solid var(--border);margin-bottom:0;"></div>
+  <div class="page-inner">
+    <div style="max-width:760px;margin:0 auto;font-size:13px;color:var(--text-mid);line-height:1.9;">
+      <p style="margin-bottom:12px;">Items purchased from this site can only be returned or exchanged at registered Souveniria stores in the Bicol Region, within 7 days from date of receipt. Returns and exchanges are subject to the terms described here.</p>
+      <p style="margin-bottom:8px;">Items to be returned/exchanged are subject to prior Quality Inspection to confirm:</p>
+      <ol style="margin-left:40px;margin-bottom:16px;">
+        <li style="margin-bottom:4px;">Accompanied by proof of purchase</li>
+        <li style="margin-bottom:4px;">Price tag and hang tag still attached</li>
+        <li style="margin-bottom:4px;">Original packaging intact</li>
+        <li style="margin-bottom:4px;">With complete accessories, if applicable</li>
+      </ol>
+      <p style="margin-bottom:16px;">Returns or exchanges are not applicable for items with defects/damage caused by customer misuse or mishandling.</p>
+      <p style="margin-bottom:16px;">Refunds will be issued in the same method as the original payment. Please allow 5&ndash;10 business days from the date of return for processing.</p>
+      <p style="margin-bottom:8px;">We only provide returns or refunds for the following reasons:</p>
+      <ul style="margin-left:20px;margin-bottom:16px;">
+        <li style="margin-bottom:4px;">The item arrives with damage due to transit or delivery</li>
+        <li style="margin-bottom:4px;">The item is declared lost by the courier or shipping company</li>
+        <li style="margin-bottom:4px;">The package is past its expected delivery date with no further tracking progress</li>
+        <li style="margin-bottom:4px;">The parcel is marked as &ldquo;Delivered&rdquo; but not received (subject to investigation)</li>
+      </ul>
+      <p style="margin-bottom:16px;">If you are returning due to buyer&rsquo;s remorse or a change of mind, a return or refund is <strong>NOT</strong> accepted.</p>
+      <h3 style="font-family:'Georgia','Times New Roman',serif;font-size:15px;color:var(--dark-olive);margin:20px 0 8px;">Returns to Your Nearest Store</h3>
+      <p style="margin-bottom:16px;">Upon confirmation of return or exchange, Souveniria will provide details of the nearest store available to accommodate the exchange. The store accepting returns must carry the same price tier or higher.</p>
+      <p style="margin-bottom:16px;">Refunds for online purchases returned in-store will be issued in the original form of payment. Please allow 30 business days from the date of receipt of returned item for your account to be credited. The refund amount will only include the amount paid after any discount and will not include shipping charges.</p>
+      <p style="font-size:12px;color:var(--text-light);">Questions? <a onclick="go('customer-service')" style="color:var(--olive);cursor:pointer;">Contact us</a>.</p>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-mountain"></div>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>About Souveniria</h4>
+        <ul>
+          <li><a onclick="go('about')">About Us</a></li>
+          <li><a onclick="go('advocacy')">Advocacy</a></li>
+          <li><a onclick="go('store-locator')">Store Locator</a></li>
+          <li><a onclick="go('customer-service')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Customer Service</h4>
+        <ul>
+          <li><a onclick="go('faq')">Frequently Asked Questions</a></li>
+          <li><a onclick="go('terms')">Terms of Service</a></li>
+          <li><a onclick="go('privacy')">Privacy Policy</a></li>
+          <li><a onclick="go('shipping')">Shipping Policy</a></li>
+          <li><a onclick="go('refund')">Refund Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter" style="text-align:center;">
+        <h4 style="letter-spacing:4px;color:#e8dfc4;font-size:12px;">FEEDBACK</h4>
+        <p style="text-align:justify;color:#c9bfa0;font-size:12px;line-height:1.9;margin-bottom:18px;">Your feedback helps us improve. Let us know how we can further enhance the services we provide.</p>
+        <div style="display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:18px;border-bottom:1px solid rgba(200,185,155,.5);padding-bottom:8px;max-width:220px;margin-left:auto;margin-right:auto;">
+          <input placeholder="Enter your message" style="background:none;border:none;outline:none;color:#c9bfa0;font-size:12.5px;font-family:'Segoe UI',Arial,sans-serif;flex:1;min-width:0;caret-color:#c9bfa0;" onkeydown="if(event.key==='Enter'&&this.value.trim()){showToast('Thank you for your feedback!','&#9829;');this.value='';}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#c9bfa0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;cursor:pointer;transition:stroke .2s;" onmouseover="this.style.stroke='#e8dfc4'" onmouseout="this.style.stroke='#c9bfa0'" onclick="var inp=this.previousElementSibling;if(inp&&inp.value.trim()){showToast('Thank you for your feedback!','&#9829;');inp.value='';}"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </div>
+        <div style="display:flex;justify-content:center;gap:14px;">
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Facebook" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="YouTube" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:#4a3f22"/></svg></a>
+          <a href="#" style="width:40px;height:40px;border:1.5px solid rgba(200,185,155,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9bfa0;text-decoration:none;transition:all .2s;" title="Instagram" onmouseover="this.style.borderColor='#e8dfc4';this.style.color='#e8dfc4'" onmouseout="this.style.borderColor='rgba(200,185,155,.45)';this.style.color='#c9bfa0'"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="footer-bottom">&copy; 2026 Souveniria &middot; Every Souvenir Carries a Story &middot; <a onclick="go('privacy')">Privacy Statement</a> &middot; <a onclick="go('terms')">Terms &amp; Policy</a></div>
+    </div>
+  </footer>
+</div>
 
 <script src="souveniria-admin.js"></script>
 </body>
